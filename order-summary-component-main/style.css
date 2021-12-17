@@ -17,6 +17,10 @@ html {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 1.6rem;
   font-family: "Red Hat Display", sans-serif;
   background-color: plum;
@@ -24,7 +28,6 @@ body {
 
 .card {
   width: 90%;
-  height: 100%;
   margin: auto;
   border-radius: 2rem;
   background-color: white;
