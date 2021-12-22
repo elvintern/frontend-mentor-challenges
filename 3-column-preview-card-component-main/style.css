@@ -17,9 +17,110 @@ html {
 }
 
 body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-size: 1.6rem;
-  font-family: "Outfit", sans-serif;
+  font-family: "Big Shoulders Display", cursive;
   background-color: var(--mainbg-color);
+}
+
+.card {
+  width: 375px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 450px;
+  padding: 2em;
+}
+
+.row img {
+  width: 65px;
+}
+
+.row-1 {
+  background-color: var(--bright-orange);
+}
+
+.row-1 .btn a {
+  color: var(--bright-orange);
+}
+
+.row-2 {
+  background-color: var(--dark-cyan);
+}
+
+.row-2 .btn a {
+  color: var(--dark-cyan);
+}
+
+.row-3 {
+  background-color: var(--very-dark-cyan);
+}
+
+.row-3 .btn a {
+  color: var(--very-dark-cyan);
+}
+
+.row h1 {
+  margin-bottom: 0;
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.row p {
+  width: 85%;
+  font-size: 2rem;
+  line-height: 1.5;
+  color: var(--transparent-white);
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 30px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.row-1 .btn:hover {
+  background-color: var(--bright-orange);
+  border: solid 2px white;
+}
+
+.row-1 .btn:hover a {
+  color: white;
+}
+
+.row-2 .btn:hover {
+  background-color: var(--dark-cyan);
+  border: solid 2px white;
+}
+
+.row-2 .btn:hover a {
+  color: white;
+}
+
+.row-3 .btn:hover {
+  background-color: var(--very-dark-cyan);
+  border: solid 2px white;
+}
+
+.row-3 .btn:hover a {
+  color: white;
+}
+
+.btn a {
+  text-decoration: none;
 }
 
 .attribution {
@@ -29,4 +130,44 @@ body {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 1440px) {
+  html {
+    font-size: 12px;
+  }
+
+  .container {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .row {
+    height: 50rem;
+  }
+
+  .btn {
+    width: 120px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1800px) {
+  html {
+    font-size: 14px;
+  }
+  .row {
+    height: 60rem;
+  }
+
+  .btn {
+    width: 150px;
+    height: 70px;
+  }
 }

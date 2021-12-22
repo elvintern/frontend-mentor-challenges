@@ -6,8 +6,22 @@ The designs were created to the following widths:
 
 - Mobile: 375px
 - Desktop: 1440px
+  div width 144rem
+  div
+  div
+  div
+
+  flex-grow: 1;
+  flex-basis: 33.3%
+  flex: 1 1 %
+  flex-direction: column
 
 ## Colors
+
+.conatiner {
+width: 1440px;
+margin: auto;
+}
 
 ### Primary
 
