@@ -1,0 +1,144 @@
+/* ********************************** */
+/* General Style */
+/* ********************************** */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font: 1.6rem "Outfit", sans-serif;
+  background-color: hsl(217, 54%, 11%);
+}
+
+/* ********************************** */
+/* Card Style */
+/* ********************************** */
+.card {
+  min-width: 40rem;
+  width: 22%;
+  padding: 3rem;
+  border-radius: 20px;
+  background-color: hsl(216, 50%, 16%);
+}
+
+.main {
+  position: relative;
+  height: 30rem;
+  border-radius: 15px;
+  background: linear-gradient(rgba(0, 255, 255, 0), rgba(0, 255, 255, 0)),
+    url("../images/image-equilibrium.jpg") center/cover;
+  transition: 0.5s linear;
+}
+
+.main img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.2s linear;
+}
+
+.main:hover {
+  background: linear-gradient(rgba(0, 255, 255, 0.5), rgba(0, 255, 255, 0.5)),
+    url("../images/image-equilibrium.jpg") center/cover;
+}
+
+.main:hover img {
+  opacity: 1;
+}
+
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 600;
+  font-size: 2.5rem;
+  margin: 2rem 0;
+  transition: 0.2s linear;
+}
+
+h1:hover,
+.price,
+cite span:hover {
+  color: aqua;
+}
+
+p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: hsl(214, 22%, 43%);
+}
+
+.price-container {
+  margin-top: 2rem;
+  border-bottom: solid 1px hsl(215, 32%, 27%);
+  padding-bottom: 1.2rem;
+}
+
+.price-container,
+.price,
+.due-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-container img {
+  margin-right: 1rem;
+}
+
+cite {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  font-style: normal;
+}
+
+cite img {
+  margin-right: 1.2rem;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  border: solid 1px hsl(0, 0%, 100%);
+}
+
+cite span {
+  color: hsl(0, 0%, 100%);
+  transition: 0.2s linear;
+}
+
+/* ********************************** */
+/* Atribution Style */
+/* ********************************** */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ********************************** */
+/* Media Queries */
+/* ********************************** */
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  html {
+    font-size: 40%;
+  }
+}
