@@ -1,0 +1,141 @@
+/* ************************************************ */
+/* General Style */
+/* ************************************************ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font: 1.6rem "Red Hat Display", sans-serif;
+  background-color: plum;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ************************************************ */
+/* Utility Style */
+/* ************************************************ */
+.card p,
+.btn--normal {
+  color: #999;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 1.5rem 0;
+  border: none;
+  border-radius: 10px;
+  font-weight: 900;
+}
+
+a.btn {
+  text-decoration: none;
+}
+
+.btn--blue {
+  color: #eee;
+  background-color: hsl(258, 97%, 45%);
+  box-shadow: 0 3px 8px #444;
+  margin: 3rem 0 1rem;
+}
+
+.btn--blue:active {
+  opacity: 0.5;
+}
+
+.btn--normal:active {
+  color: #222;
+}
+
+/* ************************************************ */
+/* Card Style */
+/* ************************************************ */
+.card {
+  width: 25%;
+  min-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px 1px #555;
+}
+
+.card__header {
+  background: url(../images/illustration-hero.svg) center/cover;
+  height: 200px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+}
+
+.card__body {
+  text-align: center;
+  background-color: #fff;
+  padding: 4rem 3rem;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.card__body__heading {
+  font-weight: 900;
+}
+
+.card__body__article {
+  margin: 3rem 0;
+  line-height: 1.8;
+}
+
+.card__body__plan {
+  border-radius: 10px;
+  background-color: hsl(225, 100%, 94%);
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__body__plan__details {
+  width: 100%;
+  margin-left: 2rem;
+  text-align: left;
+}
+
+.card__body__plan a:active {
+  color: hsl(245, 75%, 52%);
+  text-decoration: none;
+}
+
+/* ************************************************ */
+/* Attribution Style */
+/* ************************************************ */
+.attribution {
+  margin-top: 5rem;
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* ************************************************ */
+/* Media Queries */
+/* ************************************************ */
+@media only screen and (max-width: 475px) {
+  html {
+    font-size: 50%;
+  }
+
+  .card {
+    min-width: 300px;
+  }
+}
