@@ -1,0 +1,119 @@
+/* ************************************* */
+/* General Style */
+/* ************************************* */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  font: 1.5rem "Lexend Deca", sans-serif;
+}
+
+/* ************************************* */
+/* Colums Style */
+/* ************************************* */
+.colums {
+  min-width: 375px;
+  width: 70%;
+  display: flex;
+  border-radius: 10px;
+  color: hsla(0, 0%, 100%, 0.75);
+}
+
+.column {
+  padding: 5rem;
+}
+
+.column-sedans {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.column-suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.column-luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+.car-icon {
+  width: 7rem;
+  height: 4rem;
+  background-position: center;
+  background-size: cover;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  margin: 4rem 0;
+  color: hsl(0, 0%, 95%);
+}
+
+.column p {
+  width: 80%;
+  line-height: 2.2;
+  margin-bottom: 8rem;
+}
+
+.btn {
+  background-color: hsl(0, 0%, 95%);
+  text-decoration: none;
+  padding: 1.5rem 4rem;
+  border: solid 2px hsl(0, 0%, 95%);
+  border-radius: 30px;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: hsl(0, 0%, 95%);
+}
+
+.btn-sedans {
+  color: hsl(31, 77%, 52%);
+}
+
+.btn-suvs {
+  color: hsl(184, 100%, 22%);
+}
+
+.btn-luxury {
+  color: hsl(179, 100%, 13%);
+}
+
+/* ************************************* */
+/* Media Style */
+/* ************************************* */
+@media only screen and (max-width: 1900px) {
+  .colums {
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+  }
+}
+
+@media only screen and (max-width: 1450px) {
+  .btn {
+    padding: 1rem 1.5rem;
+  }
+}
+
+/* ************************************* */
+/* Atribution Style */
+/* ************************************* */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
