@@ -1,0 +1,105 @@
+/* ******************************************************* */
+/* General Style */
+/* ******************************************************* */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  background-color: hsla(184, 92%, 33%, 0.819);
+  font: 1.8rem "Kumbh Sans", sans-serif;
+}
+
+.pattern-top {
+  position: absolute;
+  top: -500px;
+  left: -150px;
+  z-index: -1;
+}
+
+.pattern-bottom {
+  position: absolute;
+  bottom: -500px;
+  right: -150px;
+  z-index: -1;
+}
+
+p {
+  font-weight: 700;
+}
+
+span {
+  color: #666;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+/* ******************************************************* */
+/* Profile Style */
+/* ******************************************************* */
+.profile {
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+.profile img {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: solid 3px #fff;
+}
+
+.profile-cover {
+  background-image: url(../images/bg-pattern-card.svg);
+  height: 200px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.profile-main {
+  text-align: center;
+  margin: 6rem 0 3rem;
+}
+
+.profile-age {
+  font-size: 1.8rem;
+}
+
+.profile-footer {
+  display: flex;
+  padding: 3rem 4rem;
+  border-top: solid 2px #eee;
+  justify-content: space-between;
+}
+
+.stat {
+  text-align: center;
+}
+
+/* ******************************************************* */
+/* Atribution Style */
+/* ******************************************************* */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
