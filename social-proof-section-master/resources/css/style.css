@@ -12,12 +12,151 @@ html {
 }
 
 body {
-  font-size: 1.6rem;
+  font: 1.5rem 'Spartan', sans-serif;
 }
 
 /* ********************************************* */
 /* Landing page Style */
 /* ********************************************* */
+.bg-top {
+  position: absolute;
+  top: -200px;
+  left: -400px;
+  width: 100%;
+  height: 100vh;
+  background: url("../images/bg-pattern-top-desktop.svg") center/cover no-repeat;
+  z-index: -1;
+}
+
+.bg-bottom {
+  position: absolute;
+  bottom: -100px;
+  right: -400px;
+  width: 100%;
+  height: 100vh;
+  background: url("../images/bg-pattern-bottom-desktop.svg"), center/cover no-repeat;  
+  z-index: -1;
+}
+
+.landing { 
+  min-width: 375px;
+  width: 80%;
+  margin: 0 auto;
+  padding: 8rem 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero {
+  flex-basis: 35%;
+}
+
+h1 {
+  font-size: 4rem;
+  color: hsl(300, 43%, 22%);
+}
+
+.hero p {
+  margin-top: 1.5rem;
+  color: hsl(303, 10%, 53%);
+}
+
+.rates {
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.rate {
+  display: flex;
+  background-color: hsl(300, 24%, 96%);
+  padding: 1.5rem 3rem ;
+}
+
+.rate-review {
+  align-self: flex-start;
+}
+
+.rate-guru {
+  align-self: center;
+}
+
+.rate-besttech {
+  align-self: flex-end;
+}
+
+.stars {
+  color: rgb(255, 217, 0);
+  margin-right: 2.5rem;
+}
+
+.stars i:not(:first-child) {
+  margin-left: 5px;
+}
+
+.rate p {
+  font-weight: 700;
+  color: hsl(300, 43%, 22%);
+}
+
+.testimonials {
+  display: flex;
+  height: 27rem;
+  justify-content: space-between;
+  margin-top: 5rem;
+}
+
+.testimonial {
+  flex-basis: 31%;
+  background-color: hsl(300, 43%, 22%);
+  padding: 3rem 2rem;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  color: hsl(0, 0%, 100%);
+}
+
+.testimonial-smith {
+  align-self: flex-start;
+}
+
+.testimonial-roberts {
+  align-self: center;
+}
+
+.testimonial-wallace {
+  align-self: flex-end;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-style: normal;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 2rem;
+}
+
+.profile span {
+  color: hsl(300, 100%, 37%);
+}
+
+.profile h2 {
+  font-size: 1.5rem;
+}
+
+.testimonial p {
+  font-size: 1.4rem;
+}
 
 
 /* ********************************************* */
@@ -33,13 +172,6 @@ body {
 
 
 
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
 ### Primary
 
 Very Dark Magenta: hsl(300, 43%, 22%)
@@ -50,12 +182,6 @@ Soft Pink: hsl(333, 80%, 67%)
 Dark Grayish Magenta: hsl(303, 10%, 53%)
 Light Grayish Magenta: hsl(300, 24%, 96%)
 White: hsl(0, 0%, 100%)
-
-## Typography
-
-### Body Copy
-
-- Font size: 15px
 
 ### Font
 
