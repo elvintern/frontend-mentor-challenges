@@ -44,6 +44,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
+  z-index: -1;
 }
 
 .landing {
@@ -53,7 +54,7 @@ body {
   min-width: 375px;
   width: 75%;
   margin: 0 auto;
-  padding: 15rem 0;
+  padding: 5rem 0;
 }
 
 .container {
@@ -77,7 +78,7 @@ h1 {
 }
 
 .rates {
-  flex-basis: 40%;
+  flex-basis: 50%;
   display: flex;
   flex-direction: column;
 }
@@ -85,7 +86,7 @@ h1 {
 .rate {
   display: flex;
   background-color: hsl(300, 24%, 96%);
-  padding: 1.5rem 8rem 1.5rem 4rem;
+  padding: 1.5rem 6rem 1.5rem 4rem;
 }
 
 .rate-review {
@@ -124,7 +125,7 @@ h1 {
 .testimonial {
   flex-basis: 31%;
   background-color: hsl(300, 43%, 22%);
-  padding: 5rem 4rem;
+  padding: 3rem 4rem;
   border-radius: 15px;
   font-size: 1.5rem;
   color: hsl(0, 0%, 100%);
