@@ -171,28 +171,109 @@ h1 {
 }
 
 /* ********************************************* */
-/* Atribution Style */
+/* Media Query */
 /* ********************************************* */
-.attribution {
-  font-size: 11px;
-  text-align: center;
+@media only screen and (max-width: 1385px) {
+  html {
+    font-size: 50%;
+  }
+
+  h1 {
+    font-size: 4.8rem;
+  }
 }
-.attribution a {
-  color: hsl(228, 45%, 44%);
+
+@media only screen and (max-width: 1000px) {
+  html {
+    font-size: 45%;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  .rates {
+    flex-basis: 55%;
+  }
 }
 
-/* ### Primary
+@media only screen and (max-width: 850px) {
+  html {
+    font-size: 40%;
+  }
 
-Very Dark Magenta: hsl(300, 43%, 22%)
-Soft Pink: hsl(333, 80%, 67%)
+  h1 {
+    font-size: 4rem;
+  }
 
-### Neutral
+  .rates {
+    flex-basis: 55%;
+  }
 
-Dark Grayish Magenta: hsl(303, 10%, 53%)
-Light Grayish Magenta: hsl(300, 24%, 96%)
-White: hsl(0, 0%, 100%)
+  .rate {
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    padding: 1.5rem 3rem 1.5rem 2rem;
+  }
+}
 
-### Font
+@media only screen and (max-width: 680px) {
+  html {
+    font-size: 35%;
+  }
 
-- Family: [Spartan](https://fonts.google.com/specimen/Spartan)
-- Weights: 400, 500, 700 */
+  /* h1 {
+    font-size: 4rem;
+  }
+
+  .rates {
+    flex-basis: 55%;
+  }
+
+  .rate {
+    display: flex;
+    background-color: hsl(300, 24%, 96%);
+    padding: 1.5rem 3rem 1.5rem 2rem;
+  } */
+}
+
+@media only screen and (max-width: 665px) {
+  html {
+    font-size: 45%;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .rates {
+    margin: 5rem 0;
+  }
+
+  .rate-review,
+  .rate-guru,
+  .rate-besttech {
+    align-self: stretch;
+    justify-content: center;
+  }
+
+  .testimonials {
+    flex-direction: column;
+  }
+
+  .testimonial-roberts {
+    margin: 3rem 0;
+  }
+}
+
+@media only screen and (max-width: 665px) {
+  .landing {
+    padding: 4rem 2rem;
+  }
+}
