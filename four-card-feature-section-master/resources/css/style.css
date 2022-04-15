@@ -12,32 +12,141 @@ html {
 }
 
 body {
-  font: 1.5rem 'Poppins', sans-serif; 
+  background-color: hsl(0, 0%, 98%);
+  font: 1.5rem "Poppins", sans-serif;
 }
 
 /* ********************************************* */
 /* Landing Page Style */
 /* ********************************************* */
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem 15rem;
+}
 
+h1,
+.hero p {
+  text-align: center;
+}
 
+p {
+  color: hsla(0, 0%, 18%, 0.703);
+}
 
-The designs were created to the following widths:
+h1 span {
+  font-weight: 200;
+}
 
-- Mobile: 375px
-- Desktop: 1440px
+.hero > p {
+  width: 40%;
+  margin: 1rem auto 3rem;
+}
 
-## Colors
+.cards {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+}
 
-### Primary
+.container-side {
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+}
 
-- Red: hsl(0, 78%, 62%)
-- Cyan: hsl(180, 62%, 55%)
-- Orange: hsl(34, 97%, 64%)
-- Blue: hsl(212, 86%, 64%)
+.container-middle {
+  flex-basis: 30%;
+  display: flex;
+  gap: 2.5rem;
+  justify-content: center;
+  flex-direction: column;
+}
 
-### Neutral
+.card {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  padding: 2rem;
+  height: 23rem;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px 0px rgb(128, 133, 152);
+}
 
-- Very Dark Blue: hsl(234, 12%, 34%)
-- Grayish Blue: hsl(229, 6%, 66%)
-- Very Light Gray: hsl(0, 0%, 98%)
+.card-supervisor {
+  border-top: solid 5px hsl(180, 62%, 55%);
+}
 
+.card-teambuilder {
+  border-top: solid 5px hsl(0, 78%, 62%);
+}
+
+.card-karma {
+  border-top: solid 5px hsl(34, 97%, 64%);
+}
+
+.card-calculator {
+  border-top: solid 5px hsl(212, 86%, 64%);
+}
+
+.card p {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  width: 80%;
+}
+
+.card img {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+}
+
+/* Media Quaries */
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 55%;
+  }
+
+  .hero > p {
+    width: 60%;
+    margin: 1rem auto 8rem;
+  }
+
+  .cards {
+    flex-direction: column;
+  }
+
+  .card {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .container-side {
+    align-items: center;
+  }
+
+  img {
+    width: 50px;
+  }
+}
+
+@media only screen and (max-width: 710px) {
+  html {
+    font-size: 45%;
+  }
+
+  .landing {
+    padding: 3rem 8rem;
+  }
+
+  .hero > p {
+    width: 60%;
+    margin: 1rem auto 5rem;
+  }
+
+  img {
+    width: 30px;
+  }
+}
