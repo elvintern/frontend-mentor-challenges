@@ -1,0 +1,156 @@
+/* ****************************************** */
+/* Gneral Style */
+/* ****************************************** */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 1.6rem "Karla", sans-serif;
+  background-color: hsl(216, 100%, 95%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ****************************************** */
+/* Grid Style */
+/* ****************************************** */
+.grid-container {
+  width: 40%;
+  padding: 10rem 0;
+}
+
+.heading {
+  padding: 4rem;
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+h1 {
+  color: hsl(179, 62%, 43%);
+}
+
+h2 {
+  font-size: 2.1rem;
+  margin: 2rem 0 1rem;
+  color: hsl(71, 73%, 54%);
+}
+
+.heading p {
+  color: #aaa;
+}
+
+.row-container {
+  display: flex;
+  color: #fff;
+}
+
+.column-1 {
+  flex-basis: 50%;
+  padding: 4rem;
+  background-color: hsl(179, 62%, 43%);
+  border-bottom-left-radius: 10px;
+}
+
+.price {
+  margin: 1rem 0 0.5rem;
+  color: hsl(179, 48%, 63%);
+}
+
+.price span {
+  color: #fff;
+  font-size: 2.7rem;
+  margin-right: 1rem;
+}
+
+.column-1 p:not(.price) {
+  font-size: 1.4rem;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 3rem;
+  background-color: hsl(71, 73%, 54%);
+  padding: 1.5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(131, 129, 129, 0.501);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.column-2 {
+  flex-basis: 50%;
+  padding: 4rem;
+  background-color: hsl(179, 65%, 51%);
+  border-bottom-right-radius: 10px;
+}
+
+ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+li {
+  color: #eee;
+  font-size: 1.4rem;
+}
+
+li:not(:first-child) {
+  margin-top: 0.4rem;
+}
+
+/* ****************************************** */
+/* Media Query */
+/* ****************************************** */
+@media only screen and (max-width: 1307px) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media only screen and (max-width: 1063px) {
+  html {
+    font-size: 55%;
+  }
+
+  .grid-container {
+    width: 60%;
+  }
+
+  .row-container {
+    flex-direction: column;
+  }
+
+  .column-1 {
+    border-bottom-left-radius: 0px;
+  }
+
+  .column-2 {
+    border-bottom-left-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+    font-size: 47%;
+  }
+
+  .grid-container {
+    width: 80%;
+  }
+}
