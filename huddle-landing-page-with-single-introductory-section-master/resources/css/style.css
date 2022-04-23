@@ -1,0 +1,161 @@
+/* ************************************************ */
+/* General Style */
+/* ************************************************ */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 1.6rem "Open Sans", sans-serif;
+  color: #fff;
+}
+
+/* ************************************************ */
+/* Landing Style */
+/* ************************************************ */
+.landing {
+  background: linear-gradient(
+      90deg,
+      rgba(106, 64, 212, 0.8),
+      rgba(232, 130, 232, 0.6)
+    ),
+    url("../images/bg-desktop.svg") center/cover no-repeat;
+  height: 100vh;
+  padding: 4rem 12rem;
+}
+
+.logo__img {
+  width: 20rem;
+}
+
+.hero-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5rem;
+  height: 70vh;
+}
+
+.hero-box__img {
+  flex-basis: 50%;
+}
+
+.hero-box__text {
+  padding-top: 4rem;
+  flex-basis: 40%;
+}
+
+.heading-primary {
+  font: 600 4rem "Poppins", sans-serif;
+}
+
+.paragraph {
+  margin: 2rem 0 3rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 2rem 8rem;
+  background-color: #fff;
+  text-decoration: none;
+  color: #000;
+  border-radius: 50px;
+}
+
+.sns-icons {
+  float: right;
+}
+
+.sns-icons a {
+  color: #fff;
+  font-size: 3rem;
+}
+
+.sns-icons a:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+/* ************************************************ */
+/* Media Queries */
+/* ************************************************ */
+@media only screen and (max-width: 1500px) {
+  .landing {
+    padding: 4rem 8rem;
+  }
+
+  .hero-box__img {
+    width: 55%;
+  }
+
+  .hero-box__text {
+    padding-top: 4rem;
+    flex-basis: 40%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 57%;
+  }
+
+  .landing {
+    padding: 4rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  html {
+    font-size: 50%;
+  }
+
+  .landing {
+    padding: 4rem 4rem 0;
+  }
+
+  .hero-box {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .hero-box__img {
+    width: 60%;
+  }
+
+  .hero-box__text {
+    padding-top: 4rem;
+    width: 80%;
+    text-align: center;
+  }
+
+  .sns-icons {
+    float: none;
+    text-align: center;
+    margin-top: 6rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 45%;
+  }
+
+  .hero-box__img {
+    width: 80%;
+  }
+
+  .heading-primary {
+    font: 600 3.5rem "Poppins", sans-serif;
+  }
+}
